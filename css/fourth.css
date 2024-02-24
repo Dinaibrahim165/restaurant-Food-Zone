@@ -1,0 +1,163 @@
+.four-screen{
+    width: 1519px;
+    background-color: black;
+    padding-top: 300px;
+    position: relative;
+}
+.imageback{
+    width: 1519px;
+    height: 400px;
+    background-image: url(../images/pexels-checo-juarez-11151168.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.card4{
+    background-color:black;
+    border: 2px solid #8b5300;
+    height: 150px;
+    margin-top: 50px;
+}
+.card-copy3{
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-size: 40px;
+    padding-top: 1%;
+    color: white;
+    background-image: linear-gradient(102deg, #8b5300 29%,rgb(129, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.row1{
+    margin-top: 30px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.img-card{
+    height: 420px;
+    margin-top: 20px;
+    border-radius: 13px;
+}
+.col1{
+    width: 400px;
+    height: 600px;
+    border: 2px solid #8b5300;
+    border-radius: 13px;
+    position: relative;
+}
+.col2{
+    background-color: black;
+    position: relative;
+}
+.card-title-col{
+    font-size: 29px;
+    color: #8b5300;
+    background-image: linear-gradient(102deg, #8b5300 20%, rgb(129,0,0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.price{
+    background-image: linear-gradient(102deg, #8b5300 30%, rgb(129,0,0));
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px; 
+    margin-top: -50px;
+    margin-left: 280px;
+    position: absolute;
+}
+.card-text-price{
+    color: white;
+    font-size: 25px;
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.list-card{
+    list-style-type: none;
+    margin-left: -25px;
+    margin-top: 15px;
+}
+.list-card li{
+    display: inline-block;
+}
+.list-card li a{
+    color: #8b5300;
+}
+.card-btn{
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(102deg, #8b5300 35%, rgb(129,0,0));
+    width: 150px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+}
+
+/* ********************************************************************************************************************************** */
+/* after & before */
+
+.col2::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0;
+    left: 0;
+    top: 0;
+    background-color:#fcb03e;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+.col2:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    visibility: visible;
+} 
+.col2::before{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#fcb03e;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+.col2:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    visibility: visible;
+} 
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.five-1{
+    width: 1519px;
+    height: 400px;
+    background-image: url(../images/rotisserie\ chicken.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    margin-top: 100px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(248, 245, 245, 0.2);
+}

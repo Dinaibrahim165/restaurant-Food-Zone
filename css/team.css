@@ -1,0 +1,109 @@
+.team{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.team-1{
+    background-image: url(../images/Jeon\ Mido.jpeg);
+    background-size: cover;
+    width: 400px;
+    height: 600px;
+    border-radius: 15px;
+    position: relative;
+    transition: 1s;
+}
+.team-2{
+    background-image: url(../images/LinkedIn\ headshots\,\ business\ headshots\ and\ professional\ portraits.jpeg);
+    background-size: cover;
+    width: 400px;
+    height: 600px;
+    border-radius: 15px;
+    position: relative;
+    transition: 1s;
+}
+.team-3{
+    background-image: url(../images/PHOENIX\ MEDICAL\ RESIDENCY\ APPLICATION\ \ HEADSHOTS\ —\ Branding\ &\ Modern\ Business\ Portrait\ Photographer\,\ \ Phoenix\ Arizona.jpeg);
+    background-size: cover;
+    width: 400px;
+    height: 600px;
+    border-radius: 15px;
+    position: relative;
+    transition: 1s;
+}
+.team-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(248, 245, 245, 0.4);
+    border-radius: 15px;
+}
+.img-team-1{
+    width: 110px;
+    height: 190px;
+    background-image:url(../images/Jeon\ Mido.jpeg);
+    background-size: cover;
+    border-radius: 110px;
+    position: absolute;
+    box-shadow: 1px 1px 15px #8b5300 inset;
+    top: 66%;
+    left: 70%;
+}
+.img-team-2{
+    width: 110px;
+    height: 190px;
+    background-image:url(../images/LinkedIn\ headshots\,\ business\ headshots\ and\ professional\ portraits.jpeg);
+    background-size: cover;
+    border-radius: 110px;
+    position: absolute;
+    box-shadow: 1px 1px 15px #8b5300 inset;
+    top: 66%;
+    left: 70%;
+}
+.img-team-3{
+    width: 110px;
+    height: 190px;
+    background-image:url(../images/PHOENIX\ MEDICAL\ RESIDENCY\ APPLICATION\ \ HEADSHOTS\ —\ Branding\ &\ Modern\ Business\ Portrait\ Photographer\,\ \ Phoenix\ Arizona.jpeg);
+    background-size: cover;
+    border-radius: 110px;
+    position: absolute;
+    box-shadow: 1px 1px 15px #8b5300 inset;
+    top: 66%;
+    left: 70%;
+}
+.team-h{
+    color: #352000;
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-size: 34px;
+    text-shadow: 1px 2px 4px #8d5500;
+    margin-top: 315px;
+    margin-left: 10px;
+}
+.team-p{
+    color: #352000;
+    font-family: "Pacifico", cursive;
+    font-weight: 580;
+    font-size: 24px;
+    margin-left: 28px;
+}
+.team-1:hover{
+    transform: scale(1.1);
+}
+.team-2:hover{
+    transform: scale(1.1);
+}
+.team-3:hover{
+    transform: scale(1.1);
+}
+.team-1:hover .team-overlay{
+    background-color: rgba(255, 200, 59, 0.3);
+}
+.team-2:hover .team-overlay{
+    background-color: rgba(255, 200, 59, 0.3);
+}
+.team-3:hover .team-overlay{
+    background-color: rgba(255, 200, 59, 0.3);
+}

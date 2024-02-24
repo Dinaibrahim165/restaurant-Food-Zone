@@ -1,0 +1,126 @@
+.card5{
+    background-color: black;
+}
+.card-5{
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    color: #8b5300;
+    background-image: linear-gradient(102deg, #8b5300 40%, rgb(129, 0, 0) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 45px;
+}
+.podcast-1{
+    margin-top: 50px;
+    margin-left: 20px;
+    background-color: black;
+    border-radius: 15px;
+    border: 3px solid #8b5300;
+    box-shadow: 1px 1px 45px #b86f00 inset;
+    transition: 1s;
+    overflow: hidden;
+}
+.img-round{
+    height: 480px;
+    width: 400px;
+    clip-path: polygon(0% 100%, 0% 0%, 94% 0%, 74% 100%);
+}
+.podcast-1:hover .img-round{
+    transform: scale(1.1);
+}
+.podcast-p2{
+    font-size: 18px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;   
+    margin-left: 22px;
+}
+.cal{
+    color: #8b5300;
+    margin-right: 10px;
+}
+.podcast-p{
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+.podcast-btn{
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 20px;
+    background-color: #8b5300;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.podcast-btn:hover{
+    background-color: #ff9900;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.follow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.follow-1{
+    width: 240px;
+    height: 220px;
+    background-color: black;
+    border-radius: 15px;
+    /* box-shadow: 1px 1px 15px #8b5300 inset; */
+}
+.img-follow-1{
+    width: 190px;
+    height: 160px;
+    background-image: url(../images/An\ Internal\ Email\ to\ Tim\ Cook\ and\ the\ State\ of\ Business\ Intelligence.jpeg);
+    background-size: cover;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+    transform: scale(1.1);
+}
+.img-follow-2{
+    width: 190px;
+    height: 160px;
+    background-image: url(../images/Instagram\ now\ finally\ allows\ users\ to\ download\ public\ Reels\ _\ TechCrunch.jpeg);
+    background-size: cover;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+    transform: scale(1.1);
+}
+.img-follow-3{
+    width: 190px;
+    height: 160px;
+    background-image: url(../images/Premium\ Photo\ _\ 3d\ facebook\ application\ logo.jpeg);
+    background-size: cover;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+    transform: scale(1.1);
+}
+.img-follow-4{
+    width: 190px;
+    height: 160px;
+    background-image: url(../images/Premium\ Photo\ _\ 3d\ whatsapp\ logo\ icon\ glow\ high\ quality\ render.jpeg);
+    background-size: cover;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+    transform: scale(1.1);
+}
+.follow-title{
+    margin-top: 18px;
+    margin-left:38px;
+}
+.follow-title a{
+    color: #8b5300;
+}
+.follow-title a:hover{
+    color: #ff9900;
+}

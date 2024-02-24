@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fourth.css">
+    <link rel="stylesheet" href="css/second.css">
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/podcast.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <div class="first-screen">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Food Zone</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu list" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Special Menu</a></li>
+                    <li><a class="dropdown-item" href="#">Main Dish</a></li>
+                    <li><a class="dropdown-item" href="#">Appetizer</a></li>
+                    <li><a class="dropdown-item" href="#">Desserts</a></li>
+                </ul>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success btn-search" type="submit">Search</button>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-login ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Login
+              </button>
+
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      <p class="p-1">We'll never share your email with anyone else.</p>
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Password</label>
+        <input type="Password" class="form-control" id="exampleFormControlInput1" placeholder="********">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+          <label class="form-check-label" for="flexSwitchCheckChecked">Remember me</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-model1" data-bs-dismiss="modal">Login</button>
+        <button type="button" class="btn btn-model" data-bs-dismiss="modal">Close</button>
+      </div>
+</div>
+</div>
+</div>
+</div>
+
+          <!--carusol-->
+          <div id="carouselExampleCaptions" class="carousel slide div-1" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/pexels-checo-juarez-11151168.jpg" class="d-block w-100 rounded-4" alt="..." height="580">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="title-nav">Steak Skewers</h5>
+                  <p class="p-nav">Food Zone offers delicious dishes of meat.</p>
+                  <button class="nav-btn">Explore for more</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/pexels-klaus-nielsen-6287525.jpg" class="d-block w-100 rounded-4" alt="..." height="580">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="title-nav">Pasta</h5>
+                  <p class="p-nav">Food Zone offers delicious and different dishes of pasta with different sauses.</p>
+                  <button class="nav-btn">Explore for more</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/high-angle-tasty-kebab-slate-with-other-dish-tomatoes.jpg" class="d-block w-100 rounded-4" alt="..." height="580">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="title-nav">Mix Grilled</h5>
+                  <button class="nav-btn">Explore for more</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+           <div class="icons">
+            <ul class="icons-list">
+              <li><i class="fab fa-facebook-square"></i></li>
+              <li><i class="fab fa-whatsapp-square"></i></li>
+              <li><i class="fab fa-twitter-square"></i></li>
+              <li><i class="fab fa-linkedin"></i></li>
+              <li><i class="fab fa-instagram-square"></i></li>
+            </ul>
+           </div>
+          </div> <!--carusol-->
+    </div> <!--first-screen-->
+ 
+    <!---------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="second-screen">
+
+      <!--card-->
+      <div class="card card1 col-lg-12 col-md-6 col-sm-4 col-4">
+        <div class="card-body">
+          <h5 class="card-title"> Welcome To Food Zone:</h5>
+          <p class="card-text">Have a delicious meal with us. We have familiar area for your kids that is safe for them.</p>
+          <p class="card-text2">Sale Up to 15%</p>
+          <a href="#" class="btn sec-btn">Go to our menu</a>
+          <a href="#" class="btn sec-btn2">Order Now</a>
+        </div>
+      </div> <!--card-->
+
+      <div class="card text-center card2 col-lg-12 col-md-6 col-sm-4 col-4">
+        <div class="card-body">
+          <h5 class="card-title2">The Most Delicious Food </h5>
+        </div>
+      </div>
+
+      <!--accordion-->
+      <div class="accordion accordion-flush col-lg-12 col-md-6 col-sm-4 col-4" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button btn-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Main Dish
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> Food Zone many and unique dishes that will be suitable for everyone<code>.Food Zone's main dish</code> Please, visit our website to know more. </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button btn-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Appetizer
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Food Zone many Appetizers that will be delicious with your meal<code>.Food Zone's appetizer</code> Please, visit our website to know more.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button btn-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Dessert
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Food Zone different types of desserts that will be delicious after meal.<code>.Food Zone's dessert</code> Please, visit our website to know more.</div>
+          </div>
+        </div>
+      </div>
+     </div> <!--second-screen -->
+
+     <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+     <div class="third-screen">
+
+      <div class="card text-center card3 col-lg-12 col-md-6 col-sm-4 col-4">
+        <div class="card-body">
+          <h5 class="card-title2 card-copy2">Translate from Arabic to English </h5>
+        </div>
+      </div>
+
+      <div class="card card-trans col-lg-12 col-md-6 col-sm-4 col-4">
+        <div class="card-body">
+          <h5 class="card-title-copy title-trans">Write and Translate..</h5>
+           <!-- Button trigger modal -->
+           <button type="button" class="btn-login ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            Copy
+            </button>
+          <div class="form-floating">
+            <textarea class="form-control form1" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2 float">translate</label>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <h5 class="modal-title model-title" id="exampleModalLabel">Food Zone says:</h5>
+      <div class="modal-body body1">
+        .تم نسخ النص
+      </div>
+        <button type="button" class="btn btn-copy" data-bs-dismiss="modal">Ok</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="card text-center sec col-lg-12 col-md-6 col-sm-4 col-4">
+  <div class="card-body">
+    <h5 class="card-title2 card-copy2">Translate from Arabic to Frensh </h5>
+  </div>
+</div>
+
+<div class="card card-trans col-lg-12 col-md-6 col-sm-4 col-4">
+  <div class="card-body">
+    <h5 class="card-title-copy title-trans">Write and Translate..</h5>
+     <!-- Button trigger modal -->
+     <button type="button" class="btn-login ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+      Copy
+      </button>
+    <div class="form-floating">
+      <textarea class="form-control form1" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+      <label for="floatingTextarea2">translate</label>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  <h5 class="modal-title model-title" id="exampleModalLabel">Food Zone says:</h5>
+<div class="modal-body body1">
+  .تم نسخ النص
+</div>
+  <button type="button" class="btn btn-copy" data-bs-dismiss="modal">Ok</button>
+</div>
+</div>
+</div>
+
+
+<div class="card text-center sec col-lg-12 col-md-6 col-sm-4 col-4">
+  <div class="card-body">
+    <h5 class="card-title2 card-copy2">Translate from Arabic to German </h5>
+  </div>
+</div>
+
+<div class="card card-trans col-lg-12 col-md-6 col-sm-4 col-4">
+  <div class="card-body">
+    <h5 class="card-title-copy title-trans">Write and Translate..</h5>
+     <!-- Button trigger modal -->
+     <button type="button" class="btn-login ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+      Copy
+      </button>
+    <div class="form-floating">
+      <textarea class="form-control form1" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+      <label for="floatingTextarea2">translate</label>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  <h5 class="modal-title model-title" id="exampleModalLabel">Food Zone says:</h5>
+<div class="modal-body body1">
+  .تم نسخ النص
+</div>
+  <button type="button" class="btn btn-copy" data-bs-dismiss="modal">Ok</button>
+</div>
+</div>
+</div>
+     </div> <!--third-screen-->
+
+     <!-- ********************************************************************************************************************************** -->
+     
+     <div class="four-screen col-lg-12 col-md-6 col-sm-4 col-4">
+      <div class="imageback col-lg-12 col-md-6 col-sm-4 col-4"></div><!--image-back-->
+
+      <div class="card text-center card4 col-lg-12 col-md-6 col-sm-4 col-4">
+        <div class="card-body">
+          <h5 class="card-title2 card-copy3">Food Zone's most delicious food </h5>
+        </div>
+      </div>
+
+      <div class="row row1 row-cols-1 row-cols-md-3 g-4 col-lg-12 col-md-6 col-sm-4 col-4">
+        <div class="col col1">
+          <div class="card col2 h-100">
+            <img src="images/Aussie Burger.jpeg" class="card-img-top img-card" alt="...">
+            <div class="card-body">
+              <h5 class="card-title-col">King Burger</h5>
+              <button class="price"> <p class="card-text-price">20$</p></button>
+              <ul class="list-card">
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+              </ul>
+              <button class="card-btn">Order Now</button>
+            </div>
+          </div>
+        </div> 
+        <div class="col col1">
+          <div class="card col2 h-100">
+            <img src="images/Hausgemachter Crispy Chicken Burger für die ganze Familie!.jpeg" class="card-img-top img-card" alt="...">
+            <div class="card-body">
+              <h5 class="card-title-col">Chicken Burger</h5>
+              <button class="price"> <p class="card-text-price">16$</p></button>
+              <ul class="list-card">
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="far fa-star"></i></li></a>
+              </ul>
+              <button class="card-btn">Order Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col col1">
+          <div class="card col2 h-100">
+            <img src="images/Feast Upon This!.jpeg" class="card-img-top img-card" alt="...">
+            <div class="card-body">
+              <h5 class="card-title-col">Fried Snakes</h5>
+              <button class="price"> <p class="card-text-price">10$</p></button>
+              <ul class="list-card">
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="far fa-star"></i></li></a>
+                <li><a href="#"><i class="far fa-star"></i></li></a>
+              </ul>
+              <button class="card-btn">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+      <div class="row row1 row-cols-1 row-cols-md-3 g-4 col-lg-12 col-md-6 col-sm-4 col-4">
+        <div class="col col1">
+          <div class="card col2 h-100">
+            <img src="images/20 Instant Pot Recipes That Will Make Your Life Easy.jpeg" class="card-img-top img-card" alt="...">
+            <div class="card-body">
+              <h5 class="card-title-col">Pasta with MeatBalls</h5>
+              <button class="price"> <p class="card-text-price">22$</p></button>
+              <ul class="list-card">
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="far fa-star"></i></li></a>
+              </ul>
+              <button class="card-btn">Order Now</button>
+            </div>
+          </div>
+        </div> 
+        <div class="col col1">
+          <div class="card col2 h-100">
+            <img src="images/One-Pan Lamb Meatballs and Saffron Rice with Herby-Yogurt Sauce.jpeg" class="card-img-top img-card" alt="...">
+            <div class="card-body">
+              <h5 class="card-title-col">Rice with MeatBalls</h5>
+              <button class="price"> <p class="card-text-price">19$</p></button>
+              <ul class="list-card">
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="far fa-star"></i></li></a>
+              </ul>
+              <button class="card-btn">Order Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col col1">
+          <div class="card col2 h-100">
+            <img src="images/download (1).jpeg" class="card-img-top img-card" alt="...">
+            <div class="card-body">
+              <h5 class="card-title-col">Grilled Skewers Meat</h5>
+              <button class="price"> <p class="card-text-price">28$</p></button>
+              <ul class="list-card">
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+              </ul>
+              <button class="card-btn">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- ******************************************************************************************************************************************* -->
+      <div class="row row1 row-cols-1 row-cols-md-3 g-4 col-lg-12 col-md-6 col-sm-4 col-4">
+        <div class="col col1">
+          <div class="card col2 h-100">
+            <img src="images/Easy Grilled Thai Chicken Skewers (With Peanut Sauce!).jpeg" class="card-img-top img-card" alt="...">
+            <div class="card-body">
+              <h5 class="card-title-col">Grilled Chicken</h5>
+              <button class="price"> <p class="card-text-price">25$</p></button>
+              <ul class="list-card">
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="far fa-star"></i></li></a>
+                <li><a href="#"><i class="far fa-star"></i></li></a>
+              </ul>
+              <button class="card-btn">Order Now</button>
+            </div>
+          </div>
+        </div> 
+        <div class="col col1">
+          <div class="card col2 h-100">
+            <img src="images/download.jpeg" class="card-img-top img-card" alt="...">
+            <div class="card-body">
+              <h5 class="card-title-col">Mix Grilled</h5>
+              <button class="price"> <p class="card-text-price">32$</p></button>
+              <ul class="list-card">
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+              </ul>
+              <button class="card-btn">Order Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col col1">
+          <div class="card col2 h-100">
+            <img src="images/pizza.jpeg" class="card-img-top img-card" alt="...">
+            <div class="card-body">
+              <h5 class="card-title-col">Fried Snakes</h5>
+              <button class="price"> <p class="card-text-price">17$</p></button>
+              <ul class="list-card">
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="fas fa-star"></i></li></a>
+                <li><a href="#"><i class="far fa-star"></i></li></a>
+              </ul>
+              <button class="card-btn">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- ******************************************************************************************************************************************* -->
+<div class="row row1 row-cols-1 row-cols-md-3 g-4 col-lg-12 col-md-6 col-sm-4 col-4">
+  <div class="col col1">
+    <div class="card col2 h-100">
+      <img src="images/Buttermilk Fried Chicken.jpeg" class="card-img-top img-card" alt="...">
+      <div class="card-body">
+        <h5 class="card-title-col">Fried Chicken</h5>
+        <button class="price"> <p class="card-text-price">22$</p></button>
+        <ul class="list-card">
+          <li><a href="#"><i class="fas fa-star"></i></li></a>
+          <li><a href="#"><i class="fas fa-star"></i></li></a>
+          <li><a href="#"><i class="fas fa-star"></i></li></a>
+          <li><a href="#"><i class="far fa-star"></i></li></a>
+          <li><a href="#"><i class="far fa-star"></i></li></a>
+          <li><a href="#"><i class="far fa-star"></i></li></a>
+        </ul>
+        <button class="card-btn">Order Now</button>
+      </div>
+    </div>
+  </div> 
+  <div class="col col1">
+    <div class="card col2 h-100">
+      <img src="images/everybody loves to eat_ Photo.jpeg" class="card-img-top img-card" alt="...">
+      <div class="card-body">
+        <h5 class="card-title-col">Sandwiches Share Box</h5>
+        <button class="price"> <p class="card-text-price">35$</p></button>
+        <ul class="list-card">
+          <li><a href="#"><i class="fas fa-star"></i></li></a>
+          <li><a href="#"><i class="fas fa-star"></i></li></a>
+          <li><a href="#"><i class="fas fa-star"></i></li></a>
+          <li><a href="#"><i class="fas fa-star"></i></li></a>
+          <li><a href="#"><i class="fas fa-star"></i></li></a>
+          <li><a href="#"><i class="far fa-star"></i></li></a>
+        </ul>
+        <button class="card-btn">Order Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="col col1">
+    <div class="card col2 h-100">
+      <img src="images/Air Fryer Mozzarella Sticks.jpeg" class="card-img-top img-card" alt="...">
+      <div class="card-body">
+        <h5 class="card-title-col">Appetizers</h5>
+        <button class="price"> <p class="card-text-price">8$</p></button>
+        <ul class="list-card">
+          <li><a href="#"><i class="fas fa-star"></i></li></a>
+          <li><a href="#"><i class="fas fa-star"></i></li></a>
+          <li><a href="#"><i class="fas fa-star"></i></li></a>
+          <li><a href="#"><i class="fas fa-star"></i></li></a>
+          <li><a href="#"><i class="fas fa-star"></i></li></a>
+          <li><a href="#"><i class="fas fa-star"></i></li></a>
+        </ul>
+        <button class="card-btn">Order Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="five-1 col-lg-12 col-md-6 col-sm-4 col-4"><div class="overlay"></div></div>
+
+<div class="card text-center card4 col-lg-12 col-md-6 col-sm-4 col-4">
+  <div class="card-body">
+    <h5 class="card-title2 card-copy3">Thanks For Our Team</h5>
+  </div>
+</div>
+     
+
+     <!-- ******************************************************************************************************************************** -->
+
+     <!-- team -->
+
+     <div class="row team row-cols-1 row-cols-md-3 g-4 col-lg-12 col-md-6 col-sm-4 col-4">
+      <div class="col team-1">
+        <div class="team-overlay">
+          <div class="card-body">
+           <div class="img-team-1"></div>
+           <h4 class="team-h">Eng. Razan Smith</h4>
+           <p class="team-p">UI/UX Designer</p>
+          </div> <!--body-->
+        </div> <!--overlay-->
+      </div> 
+
+      <div class="col team-2">
+        <div class="team-overlay">
+          <div class="card-body">
+            <div class="img-team-2"></div>
+            <h4 class="team-h">Eng. Kamilia Dose</h4>
+           <p class="team-p">Front End Developer</p>
+          </div> <!--body-->
+        </div> <!--overlay-->
+      </div>
+
+      <div class="col team-3">
+          <div class="team-overlay">
+            <div class="card-body">
+              <div class="img-team-3"></div>
+              <h4 class="team-h">Eng. Mariya Joe</h4>
+           <p class="team-p">Back End Developer</p>
+          </div> <!--body-->
+        </div> <!--overlay-->
+      </div>
+
+    </div><!--team-->
+
+    <!-- ************************************************************************************************************************************** -->
+       
+       <!-- podcast -->  
+ 
+       <div class="card text-center card5 col-lg-12 col-md-4 col-sm-4 col-4">
+        <div class="card-body">
+          <h5 class="card-title2 card-5">Food Zone News</h5>
+        </div>
+      </div>
+      <div class="card mb-3 col-lg-12 col-md-4 col-sm-4 col-4 podcast-1" style="max-width: 1400px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="images/Steak stock photo.jpeg" class="img-fluid rounded-start rounded-10 img-round" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Food Zone's Steak</h5>
+              <p class="podcast-p2"><i class="fas fa-calendar-alt cal"></i>Mon, June 25th 2024</p>
+              <p class="card-text podcast-p">The podcast is talking about all things Food Zone today, which, in particular, was one of the hardest-hit segments of the restaurant industry over the past year. Also, Chef Shawn Heine from Prime Cincinnati and Chef Glenn Wheeler from Spencer’s for Steaks & Chops in Omaha stop by to talk about the trials they endured to keep their respective steakhouses afloat during the pandemic, and what the future holds for their restaurants and others like them.</p>
+              <button class="podcast-btn"><i class="fas fa-podcast"></i> Podcast</button>
+              <button class="podcast-btn"><i class="fas fa-clock"></i> 60 mins</button>
+              <button class="podcast-btn"> <i class="fab fa-youtube"></i> Play Episode</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 col-lg-12 col-md-4 col-sm-4 col-4 podcast-1" style="max-width: 1400px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="images/Spaghetti & Meatballs with Spicy Tomato Sauce - The Original Dish.jpeg" class="img-fluid rounded-start rounded-10 img-round" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Pasta with MeatBalls</h5>
+              <p class="podcast-p2"><i class="fas fa-calendar-alt cal"></i>Mon, June 25th 2024</p>
+              <p class="card-text podcast-p">Spaghetti and meatballs is one of the most beloved and well-known Italian-American combinations. Our meatball recipe uses ricotta cheese which yields impossibly soft and pillowy meatballs, and our sauce is simple and straightforward.  No need to empty your spice cabinet into this sauce.</p>
+              <button class="podcast-btn"><i class="fas fa-podcast"></i> Podcast</button>
+              <button class="podcast-btn"><i class="fas fa-clock"></i> 40 mins</button>
+              <button class="podcast-btn"> <i class="fab fa-youtube"></i> Play Episode</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 col-lg-12 col-md-4 col-sm-4 col-4 podcast-1" style="max-width: 1400px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="images/Shrimp Tomato Basil Pasta.jpeg" class="img-fluid rounded-start rounded-10 img-round" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Shrimp Tomato Basil Pasta</h5>
+              <p class="podcast-p2"><i class="fas fa-calendar-alt cal"></i>Mon, June 25th 2024</p>
+              <p class="card-text podcast-p">Shrimp tomato basil pasta combines al dente linguine with succulent shrimp that’s tossed in a garlicky cherry tomato chili sauce and finished with hand-torn fresh basil. This pasta is on the lighter side and the chili pepper adds just the right amount of heat!  </p>
+              <button class="podcast-btn"><i class="fas fa-podcast"></i> Podcast</button>
+              <button class="podcast-btn"><i class="fas fa-clock"></i> 60 mins</button>
+              <button class="podcast-btn"> <i class="fab fa-youtube"></i> Play Episode</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 col-lg-12 col-md-4 col-sm-4 col-4 podcast-1" style="max-width: 1400px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="images/Easy Garlic Parmesan Buffalo Chicken Wings_.jpeg" class="img-fluid rounded-start rounded-10 img-round" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Crispy Garlic Parmesan Chicken Wing</h5>
+              <p class="podcast-p2"><i class="fas fa-calendar-alt cal"></i>Mon, June 25th 2024</p>
+              <p class="card-text podcast-p">These oven-baked Garlic Parmesan Chicken Wings are so crispy and delicious, you’d swear they were fried! They’re excellent on their own but even better with a side of buttermilk ranch dressing or blue cheese dressing!</p>
+              <button class="podcast-btn"><i class="fas fa-podcast"></i> Podcast</button>
+              <button class="podcast-btn"><i class="fas fa-clock"></i> 30 mins</button>
+              <button class="podcast-btn"> <i class="fab fa-youtube"></i> Play Episode</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 col-lg-12 col-md-4 col-sm-4 col-4 podcast-1" style="max-width: 1400px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="images/We Tried Pizza Hut’s Updated Pan Pizza to See if it’s Any Good.jpeg" class="img-fluid rounded-start rounded-10 img-round" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Pizza</h5>
+              <p class="podcast-p2"><i class="fas fa-calendar-alt cal"></i>Mon, June 25th 2024</p>
+              <p class="card-text podcast-p">Food Zone's Pizza Podcast will record the science, history, and culture of pizza, all told through in-depth interviews with the book’s coauthors and the people who are shaping the future of the world’s most popular food.
+
+                Each slice of this series examines a different aspect of pizza, from deep dives into flour, sauce, and cheese, to its roots and the evolution of regional styles.</p>
+              <button class="podcast-btn"><i class="fas fa-podcast"></i> Podcast</button>
+              <button class="podcast-btn"><i class="fas fa-clock"></i> 30 mins</button>
+              <button class="podcast-btn"> <i class="fab fa-youtube"></i> Play Episode</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =============================================================================================================================== -->
+
+      <div class="card text-center card5 col-lg-12 col-md-4 col-sm-4 col-4">
+        <div class="card-body">
+          <h5 class="card-title2 card-5">JOIN US</h5>
+        </div>
+      </div>
+
+      <div class="row follow row-cols-1 row-cols-md-3 g-4 col-lg-12 col-md-6 col-sm-4 col-4">
+        <div class="col follow-1">
+            <div class="card-body">
+              <div class="img-follow-1"></div>
+              <h5 class="follow-title"><a href="#">Subscribe Now</a></h5>
+            </div> <!--body-->
+        </div> 
+  
+        <div class="col follow-1">
+            <div class="card-body">
+              <div class="img-follow-2"></div>
+              <h5 class="follow-title"><a href="#">Follow Us</a></h5>
+            </div> <!--body-->
+        </div>
+  
+        <div class="col follow-1">
+              <div class="card-body">
+                <div class="img-follow-3"></div>
+                <h5 class="follow-title"><a href="#">Follow Us</a></h5>
+            </div> <!--body-->
+        </div>
+
+        <div class="col follow-1">
+            <div class="card-body">
+              <div class="img-follow-4"></div>
+              <h5 class="follow-title"><a href="#">Our whatsapp</a></h5>
+          </div> <!--body-->
+      </div>
+      </div>
+
+      <!-- ----------------------------------------------------------------------------------------------------------------------------- -->
+
+      <div class="row row1 row-cols-1 row-cols-md-3 g-4 col-lg-12 col-md-6 col-sm-4 col-4 footer11">
+        <div class="col footer-col">
+          <div class="card footer-col2 h-100">
+            <img src="images/RESTAURANT 3D ICON.jpeg" class="card-img-top img-card footer-img">
+            <div class="card-body">
+              <h4 class="footer-title">Food Zone</h4>
+              <div class="underline"></div>
+              <ul class="foot-list">
+                <li><i class="fas fa-phone-alt"></i> Tel: 000-555-666-77</li>
+                <li><i class="fas fa-map-marker-alt"></i> Adress: Egypt-New Cairo</li>
+                <li><i class="fas fa-fax"></i> Fax: 000-555-66-777</li>
+              </ul>
+            </div>
+          </div>
+        </div> 
+        <div class="col footer-col">
+          <div class="card footer-col2 h-100">
+            <img src="images/RESTAURANT 3D ICON.jpeg" class="card-img-top img-card footer-img" alt="...">
+            <div class="card-body">
+              <h4 class="footer-title">Pages</h4>
+              <div class="underline"></div>
+              <ul class="foot-list">
+                <li><i class="fab fa-whatsapp"></i> <a href="#">whatsapp</a></li>
+                <li><i class="fab fa-telegram-plane"></i> <a href="#">Telegram</a></li>
+                <li><i class="fab fa-chrome"></i> <a href="#">Website</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col footer-col">
+          <div class="card footer-col2 h-100">
+            <img src="images/RESTAURANT 3D ICON.jpeg" class="card-img-top img-card footer-img" alt="...">
+            <div class="card-body">
+              <h4 class="footer-title">Vision</h4>
+              <div class="underline"></div>
+              <ul class="foot-list">
+                <li>Services for all.</li>
+                <li>Prvide best services.</li>
+                <li>Your Health is more important.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h5 class="copyright"> Copyright &copy; 2023. ALL RIGHT RESERVED By Food Zone</h5>
+      </div>
+
+    </div><!--four-screen-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
